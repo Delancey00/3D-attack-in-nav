@@ -58,15 +58,18 @@ conda activate obj
 obj2gltf -i attack-scene-example.obj -o svBbv1Pavdk.basis.glb
 ```
 # Build Docker (requires sudo)
+```
 cd PEANUT
 ./build_and_run.sh
-
-# After building, enter docker to test navigation agents
+```
+## After building, enter docker to test navigation agents
+```
 conda activate habitat
 export CUDA_VISIBLE_DEVICES=0
 ./nav_exp.sh
 
 # If you need to save the current running Docker container as an image
 docker commit <container ID or container name> <image name>
+```
 # Acknowledgments
 This project builds upon code from [REVAMP](https://github.com/poloclub/revamp), [PEANUT](https://github.com/ajzhai/PEANUT) and [Physically Attacks](https://github.com/chen37058/Physical-Attacks-in-Embodied-Nav/tree/main?tab=readme-ov-file) We thank the authors of these projects for their amazing work!
