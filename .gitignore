@@ -1,0 +1,40 @@
+# 大型模型文件
+*.pth
+*.pkl
+*.h5
+*.ckpt
+
+# 3D 模型和场景文件
+*.glb
+*.gltf
+*.obj
+*.basis
+
+# 数据文件
+*.exr
+*.nvdb
+*.hair
+*.bin
+
+# 日志文件
+*.log
+
+# 图片文件（根据需要调整）
+src/trajectory_example/*.png
+docs/*.gif
+docs/*.png
+
+# NVIDIA OptiX SDK（整个目录）
+NVIDIA-OptiX-SDK-*/
+SDK/
+
+# 数据集目录
+PEANUT/habitat-challenge-data/
+scenes/
+test-patch/data/
+test-patch/models/
+pretrained-models/
+results/
+
+# 转换后的大文件
+converted_model.obj

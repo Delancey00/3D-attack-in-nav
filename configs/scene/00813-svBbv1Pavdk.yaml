@@ -1,0 +1,24 @@
+# name: 00813-svBbv1Pavdk
+# sensor_radius: 10
+# sensor_count: 32
+# sensor_z_lats: [1]
+# path: "scenes/00813-svBbv1Pavdk/00813-svBbv1Pavdk.xml"
+# textures: ["scenes/00813-svBbv1Pavdk/textures/${texture}.png"]
+# # target_param_keys: ["adversarial_patch.bsdf.nested_bsdf.reflectance.data"] # 对抗面片的纹理
+# # target_param_keys: ["adversarial_patch.bsdf.opacity.data"] # 对抗补丁的不透明度
+# target_param_keys: ["elm__50.bsdf.reflectance.data"]  # 伪装
+# sensor_key: "PerspectiveCamera"
+# #上述内容分别优化了伪装、对抗补丁的不透明度、对抗面片的纹理
+name: 00813-svBbv1Pavdk
+sensor_radius: 10
+sensor_count: 32
+sensor_z_lats: [1]
+#path: "/home/wmy/project/Physical-Attacks-in-Embodied-Nav/scenes/00813-svBbv1Pavdk/ori-00813-svBbv1Pavdk.xml"   ##2D
+path: "/home/wmy/project/Physical-Attacks-in-Embodied-Nav/scenes/00813-svBbv1Pavdk/00813-svBbv1Pavdk.xml"         ## 3D
+textures: ["scenes/00813-svBbv1Pavdk/textures/${texture}.png"]
+#target_param_keys: ["adversarial_patch.bsdf.nested_bsdf.reflectance.data"]  ##2D
+target_param_keys: ["elm__2.bsdf.reflectance.data"]                           ## 3D
+#target_param_keys: ["adversarial_patch.bsdf.opacity.data"]#不透明度
+# target_param_keys: ["elm__50.bsdf.reflectance.data"]#伪装攻击
+sensor_key: "PerspectiveCamera"
+#上述内容分别优化了伪装、对抗补丁的不透明度、对抗面片的纹理
